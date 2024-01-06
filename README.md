@@ -5,14 +5,14 @@ This architectural framework provides an overview of language-conditioned robot 
 
 ## Table of the Content
 
-- Survey Paper
-- Language-conditioned Reinforcement Learning
-- Language-conditioned Imitation Learning
-  - Behaviour Cloning
-  - Inverse Reinforcement Learning
-- Enpowered by LLMs
-- Enpowered by VLMs
-- Comparative Analysis
+- [Survey Paper](#survey)
+- [Language-conditioned Reinforcement Learning](#language-conditioned-reinforcement-learning)
+- [Language-conditioned Imitation Learning](#language-conditioned-imitation-learning)
+  - [Behaviour Cloning](#behaviour-cloning)
+  - [Inverse Reinforcement Learning](#inverse-reinforcement-learning)
+- [Enpowered by LLMs](#empowered-by-llms)
+- [Enpowered by VLMs](#empowered-by-vlms)
+- [Comparative Analysis](#comparative-analysis)
 
 ## Survey
 
