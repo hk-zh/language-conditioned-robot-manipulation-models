@@ -208,6 +208,17 @@ Alois Knoll
         <td>❌</td>
         <td>✅</td>
     </tr>
+    <tr align="center">
+        <td><a href="https://arnold-benchmark.github.io/">ARNOLD</a></td>
+        <td>NVIDIA Isaac Gym</td>
+        <td>Franka Panda</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>❌</td>
+        <td>❌</td>
+        <td>✅</td>
+    </tr>
 </table>
 
 
