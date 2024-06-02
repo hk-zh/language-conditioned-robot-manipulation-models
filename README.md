@@ -71,6 +71,20 @@ Alois Knoll
 ### Inverse Reinforcement Learning
 - Grounding english commands to reward function [[paper]](https://www.roboticsproceedings.org/rss11/p18.pdf)
 - From language to goals: Inverse reinforcement learning for vision-based instruction following [[paper]](https://arxiv.org/abs/1902.07742)
+
+## Neuralsymbolic
+### Learning for Reasoning
+- Hierarchical understanding in robotic manipulation: A knowledge-based framework [[paper]](https://www.mdpi.com/2076-0825/13/1/28)
+- Semantic Grasping Via a Knowledge Graph of Robotic Manipulation: A Graph Representation Learning Approach [[paper]](https://ieeexplore.ieee.org/iel7/7083369/7339444/09830861.pdf)
+- Knowledge Acquisition and Completion for Long-Term Human-Robot Interactions using Knowledge Graph Embedding [[paper]](https://arxiv.org/pdf/2301.06834)
+### Reasoning for Learning
+- Tell me dave: Context-sensitive grounding of natural language to manipulation instructions [[paper]](https://www.semanticscholar.org/paper/Tell-me-Dave%3A-Context-sensitive-grounding-of-to-Misra-Sung/8cb52a0424992807dceeaf2af740364b2e80c438)
+- Neuro-symbolic procedural planning with commonsense prompting [[paper]](https://arxiv.org/abs/2206.02928)
+- Reinforcement Learning Based Navigation with Semantic Knowledge of Indoor Environments [[paper]](https://ieeexplore.ieee.org/abstract/document/8919366/?casa_token=7x7LciTVSGYAAAAA:Ou51YDO9Zz6Ozk_7XTjvhdlW2IL5gOv8g9XK5tlrTOLvE2bRsuZvD2E7MRSCyIZ4c2zm-EvDJSI)
+- Learning Neuro-Symbolic Skills for Bilevel Planning [[paper]](Learning Neuro-Symbolic Skills for Bilevel Planning)
+### Learning-Reasoning
+- Learning Neuro-symbolic Programs for Language Guided Robot Manipulation [[paper]](https://arxiv.org/abs/2211.06652) [[code]](https://github.com/dair-iitd/nsrmp) [[website]](https://nsrmp.github.io/)
+- Long-term robot manipulation task planning with scene graph and semantic knowledge [[paper]](https://www.emerald.com/insight/content/doi/10.1108/RIA-09-2022-0226/full/html)
 ## Empowered by LLMs
 ### Planning
 - Sayplan: Grounding large language models using 3d scene graphs for scalable task planning [[paper]](https://arxiv.org/abs/2307.06135)
