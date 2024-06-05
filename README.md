@@ -10,6 +10,7 @@ This architectural framework provides an overview of language-conditioned robot 
 - [Language-conditioned Imitation Learning](#language-conditioned-imitation-learning)
   - [Behaviour Cloning](#behaviour-cloning)
   - [Inverse Reinforcement Learning](#inverse-reinforcement-learning)
+- [Neuralsymbolic](#neuralsymbolic)
 - [Enpowered by LLMs](#empowered-by-llms)
 - [Enpowered by VLMs](#empowered-by-vlms)
 - [Comparative Analysis](#comparative-analysis)
