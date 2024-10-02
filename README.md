@@ -84,7 +84,6 @@ Alois Knoll
 - 3D-VLA: A 3D Vision-Language-Action Generative World Model [[paper]](https://openreview.net/pdf?id=EZcFK8HupF) [[code]](https://github.com/UMass-Foundation-Model/3D-VLA) [[website]](https://vis-www.cs.umass.edu/3dvla/)
 - Octo: An Open-Source Generalist Robot Policy [[paper]](https://arxiv.org/pdf/2405.12213) [[code]](https://github.com/octo-models/octo) [[website]](https://octo-models.github.io/)
 
-- 
 ### Inverse Reinforcement Learning
 - Grounding english commands to reward function [[paper]](https://www.roboticsproceedings.org/rss11/p18.pdf)
 - From language to goals: Inverse reinforcement learning for vision-based instruction following [[paper]](https://arxiv.org/abs/1902.07742)
