@@ -23,13 +23,17 @@ This paper is basically based on the survey paper
 
 **[Language-conditioned Learning for Robot Manipulation: A Survey](https://arxiv.org/abs/2312.10807)**
 <br />
-Hongkuan Zhou,
-Xiangtong Yao,
-Yuan Meng,
-Siming Sun,
-Zhenshan Bing,
-Kai Huang,
-Hong Qiao,
+Hongkuan Zhou, 
+Xiangtong Yao, 
+Oier Mees, 
+Yuan Meng, 
+Dhruv Shah, 
+Ted Xiao,
+Yonatan Bisk, 
+Edward Johns, 
+Mohit Shridhar, 
+Kai Huang, 
+Zhenshan Bing, 
 Alois Knoll
 <br />
 
