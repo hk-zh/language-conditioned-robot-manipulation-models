@@ -149,6 +149,14 @@ Alois Knoll
 - Robotic skill acquisition via instruction augmentation with vision-language models [[paper]](https://arxiv.org/abs/2211.11736) [[website]](https://instructionaugmentation.github.io/)
 - Language reward modulation for pretraining reinforcement learning [[paper]](https://arxiv.org/abs/2308.12270) [[code]](https://github.com/ademiadeniji/lamp)
 - Vision-language models as success detectors [[paper]](https://proceedings.mlr.press/v232/du23b.html)
+### Vision-Language-Action Models (VLAMs)
+- A Generalist Agent [[paper]](https://openreview.net/pdf?id=1ikK0kHjvj)
+- RT-1: Robotics Transformer for Real-World Control at Scale [[paper]](https://arxiv.org/pdf/2212.06817) [[code]](https://github.com/google-research/robotics_transformer) [[website]](https://robotics-transformer1.github.io/)
+- RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control [[paper]](https://proceedings.mlr.press/v229/zitkovich23a/zitkovich23a.pdf)
+- Vision-Language Foundation Models as Effective Robot Imitators [[paper]](https://arxiv.org/pdf/2311.01378)
+- OpenVLA:An Open-Source Vision-Language-Action Model [[paper]](https://arxiv.org/pdf/2406.09246) [[code]](https://github.com/openvla/openvla) [[website]](https://openvla.github.io/)
+- Open X-Embodiment: Robotic Learning Datasets and RT-X Models [[paper]](https://arxiv.org/pdf/2310.08864)
+- 3D-VLA: A 3D Vision-Language-Action Generative World Model [[paper]](https://openreview.net/pdf?id=EZcFK8HupF) [[code]](https://github.com/UMass-Foundation-Model/3D-VLA) [[website]](https://vis-www.cs.umass.edu/3dvla/)
 
 ## Comparative Analysis
 ### Simulator
