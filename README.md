@@ -71,6 +71,20 @@ Alois Knoll
 - Language-conditioned imitation learning with base skill priors under unstructured data [[paper]](https://arxiv.org/abs/2305.19075) [[code]](https://github.com/hk-zh/spil) [[website]](https://hk-zh.github.io/spil/)
 - Pay attention!- robustifying a deep visuomotor policy through task-focused visual attention [[paper]](https://arxiv.org/abs/1809.10093)
 - Language-conditioned imitation learning for robot manipulation tasks [[paper]](https://arxiv.org/abs/2010.12083)
+- Multimodal Diffusion Transformer for Learning from Play [[paper]](https://openreview.net/pdf?id=nvtxqMGpn1)
+- Zero-Shot Robotic Manipulation with Pretrained Image-Editing Diffusion Models [[paper]](https://arxiv.org/pdf/2310.10639) [[code]](https://github.com/kvablack/susie) [[website]](https://rail-berkeley.github.io/susie/)
+- PlayFusion: Skill Acquisition via Diffusion from Language-Annotated Play [[paper]](https://arxiv.org/pdf/2312.04549) [[website]](https://play-fusion.github.io/)
+- ChainedDiffuser: Unifying Trajectory Diffusion and Keypose Prediction for Robotic Manipulation [[paper]](https://openreview.net/pdf?id=W0zgY2mBTA8) [[code]](https://github.com/zhouxian/act3d-chained-diffuser) [[website]](https://github.com/zhouxian/act3d-chained-diffuser)
+- GNFactor: Multi-Task Real Robot Learning with Generalizable Neural Feature Fields [[paper]](https://arxiv.org/pdf/2308.16891) [[code]](https://github.com/YanjieZe/GNFactor) [[website]](https://yanjieze.com/GNFactor/)
+- DNAct: Diffusion Guided Multi-Task 3D Policy Learning [[paper]](https://arxiv.org/pdf/2403.04115) [[website]](https://dnact.github.io/)
+- 3D Diffuser Actor: Policy Diffusion with 3D Scene Representations [[paper]](https://arxiv.org/pdf/2402.10885) [[code]](https://github.com/nickgkan/3d_diffuser_actor) [[website]](https://3d-diffuser-actor.github.io/)
+- Vision-Language Foundation Models as Effective Robot Imitators [[paper]](https://arxiv.org/pdf/2311.01378)
+- OpenVLA:An Open-Source Vision-Language-Action Model [[paper]](https://arxiv.org/pdf/2406.09246) [[code]](https://github.com/openvla/openvla) [[website]](https://openvla.github.io/)
+- Open X-Embodiment: Robotic Learning Datasets and RT-X Models [[paper]](https://arxiv.org/pdf/2310.08864)
+- 3D-VLA: A 3D Vision-Language-Action Generative World Model [[paper]](https://openreview.net/pdf?id=EZcFK8HupF) [[code]](https://github.com/UMass-Foundation-Model/3D-VLA) [[website]](https://vis-www.cs.umass.edu/3dvla/)
+- Octo: An Open-Source Generalist Robot Policy [[paper]](https://arxiv.org/pdf/2405.12213) [[code]](https://github.com/octo-models/octo) [[website]](https://octo-models.github.io/)
+
+- 
 ### Inverse Reinforcement Learning
 - Grounding english commands to reward function [[paper]](https://www.roboticsproceedings.org/rss11/p18.pdf)
 - From language to goals: Inverse reinforcement learning for vision-based instruction following [[paper]](https://arxiv.org/abs/1902.07742)
