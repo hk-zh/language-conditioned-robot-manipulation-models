@@ -1,8 +1,10 @@
-# Awesome-Language-conditioned Robot Manipulation Models [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# Thinking Toward Embodied: Awesome-Language-conditioned Robot Manipulation Models [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 ![alt text](graphs/overview.png)
 This architectural framework provides an overview of language-conditioned robot manipulation. The agent comprises three key modules: the language module, the perception module, and the control module. These modules serve the functions of understanding instructions, perceiving the environment's state, and acquiring skills, respectively. The vision-language module establishes a connection between instructions and the surrounding environment to achieve a more profound comprehension of both aspects. This interplay of information from both modalities enables the robot to engage in high-level planning and perform visual question answering tasks, ultimately enhancing its overall performance. The control module has the capability to acquire low-level policies through learning from rewards (reinforcement learning) and demonstrations (imitation learning) which engineered by experts. At times, these low-level policies can also be directly designed or hard-coded, making use of path and motion planning algorithms. There are two key loops to highlight. The interactive loop, located on the left, facilitates human-robot language interaction. The control loop, positioned on the right, signifies the interaction between the agent and its surrounding environment.
 
+## News
+[October 02 2024]  Cutting edge papers in 2024 are avaliable!!!
 ## Table of the Content
 
 - [Survey Paper](#survey)
@@ -131,6 +133,7 @@ Alois Knoll
 - Robotic skill acquisition via instruction augmentation with vision-language models [[paper]](https://arxiv.org/abs/2211.11736) [[website]](https://instructionaugmentation.github.io/)
 - Language reward modulation for pretraining reinforcement learning [[paper]](https://arxiv.org/abs/2308.12270) [[code]](https://github.com/ademiadeniji/lamp)
 - Vision-language models as success detectors [[paper]](https://proceedings.mlr.press/v232/du23b.html)
+
 ## Comparative Analysis
 ### Simulator
 | Simulator | Description |
@@ -283,6 +286,20 @@ Alois Knoll
 | [SayPlan](https://arxiv.org/abs/2307.06135) | 2023 | # | - | GPT-4 | * | ✅ | ✅ | ❌ | ❌ | 
 | [RT-2](https://arxiv.org/abs/2307.15818) | 2023 | # | - | PaLI-X, PaLM-E | PaLI-X, PaLM-E | ✅ | ✅ | ❌ | ❌ | 
 | [KNOWNO](https://arxiv.org/abs/2307.01928) | 2023 | # | PyBullet | PaLM-2L | * | ✅ | ✅ | ❌ | ❌ | 
- 
+| [Diffusion Policy](https://arxiv.org/abs/2303.04137) |2023| Push-T | MuJoCo| - | CNN |  ✅ | ❌ | ❌ | ✅ |
+| [MDT](https://arxiv.org/html/2407.05996v1) | 2023 | CALVIN | PyBullet | CLIP | CLIP | ❌ | ❌ | ✅ | ✅ |
+| [Scaling Up](https://arxiv.org/abs/2307.14535) | 2023 | # | MuJoCo| CLIP | CLIP | ✅ | ❌ | ❌ | ✅ |
+| [Playfussion](https://arxiv.org/abs/2312.04549) | 2023 | CALVIN | PyBullet | Sentence-BERT | ResNet-18 | ✅ | ❌ | ❌ | ✅ |
+| [ChainedDiffuer](https://proceedings.mlr.press/v229/xian23a.html) | 2023 | RLbench | CoppelaSim | CLIP | CLIP | ✅ | ❌ | ❌ | ✅ |
+| [GNFactor](https://arxiv.org/abs/2308.16891) | 2023 | RLbench | CoppelaSIm | CLIP | NeRF | ✅ | ❌ | ❌ | ✅ |
+| [DNAct](https://arxiv.org/abs/2403.04115) | 2024 | RLbench | CoppelaSim | CLIP | NeRF, PointNext | ✅ | ❌ | ❌ | ✅ |
+| [3D Diffuser Actor](https://arxiv.org/abs/2402.10885) | 2024 | CALVIN | PyBullet | CLIP | CLIP | ✅ | ❌ | ❌ | ✅ |
+| [RoboFlamingo](https://arxiv.org/abs/2311.01378) | 2024 | CALVIN | PyBullet | OpenFlamingo | OpenFlamingo | ❌ | ✅ | ❌ | ✅ |
+| [OpenVLA](https://arxiv.org/abs/2406.09246) | 2024 | Open X-Embodiment | - | Llama 2 7B | DinoV2 & SigLIP |  ✅ | ✅ | ❌ | ✅ | 
+| [RT-X](https://arxiv.org/abs/2310.08864) | 2024 | Open X-Embodiment | - | PaLi-X/PaLM-E | PaLi-X/PaLM-E | ✅ | ✅ | ❌ | ✅ | 
+| [PIVOT](https://openreview.net/forum?id=051jaf8MQy) | 2024 | Open X-Embodiment | - | GPT-4/Gemini | GPT-4/Gemini | ✅ | ✅ | ❌ | ❌ | 
+| [3D-VLA](https://openreview.net/forum?id=EZcFK8HupF) | 2024 | RL-Bench & CALVIN | CoppeliaSim & PyBullet | 3D-LLM | 3D-LLM | ❌ | ✅ | ❌ | ✅ |
+| [Octo](https://arxiv.org/abs/2405.12213) | 2024 | Open X-Embodiment | - | T5 | CNN | ✅ | ✅ | ❌ | ✅ | 
+| [ECoT](https://arxiv.org/abs/2407.08693) | 2024 | BridgeData V2 | - | Llama 2 7B | DinoV2 & SigLIP | ✅ | ✅ | ❌ | ✅ | 
 
 
