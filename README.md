@@ -89,7 +89,15 @@ Alois Knoll
 
 ### Inverse Reinforcement Learning
 - Grounding english commands to reward function [[paper]](https://www.roboticsproceedings.org/rss11/p18.pdf)
-- From language to goals: Inverse reinforcement learning for vision-based instruction following [[paper]](https://arxiv.org/abs/1902.07742)
+- From language to goals: Inverse reinforcement learning for vision-based instruction following [[paper]](https://arxiv.org/abs/1902.07742) 
+
+## Diffusion Policy
+- Multimodal Diffusion Transformer for Learning from Play [[paper]](https://arxiv.org/abs/2407.05996)
+- Zero-Shot Robotic Manipulation with Pretrained Image-Editing Diffusion Models [[paper]](https://arxiv.org/abs/2310.10639) [[code]](https://github.com/kvablack/susie) [[website]](https://rail-berkeley.github.io/susie/)
+- PlayFusion: Skill Acquisition via Diffusion from Language-Annotated Play [[paper]](https://arxiv.org/abs/2312.04549) [[website]](https://play-fusion.github.io/)
+- ChainedDiffuser: Unifying Trajectory Diffusion and Keypose Prediction for Robotic Manipulation [[paper]](https://openreview.net/pdf?id=W0zgY2mBTA8) [[code]](https://github.com/zhouxian/act3d-chained-diffuser) [[website]](https://chained-diffuser.github.io/)
+- DNAct: Diffusion Guided Multi-Task 3D Policy Learning [[paper]](https://arxiv.org/pdf/2403.04115) [[website]](https://dnact.github.io/)
+- 3D Diffuser Actor: Policy Diffusion with 3D Scene Representations [[paper]](https://arxiv.org/abs/2402.10885)
 
 ## Neuralsymbolic
 ### Learning for Reasoning
