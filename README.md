@@ -11,10 +11,17 @@
 - [Language-conditioned Imitation Learning](#language-conditioned-imitation-learning)
   - [Behaviour Cloning](#behaviour-cloning)
   - [Inverse Reinforcement Learning](#inverse-reinforcement-learning)
+- [Diffusion Policy](#diffusion-policy)
 - [Neuralsymbolic](#neuralsymbolic)
 - [Enpowered by LLMs](#empowered-by-llms)
+  - [Planning](#planning)
+  - [Reasoning](#reasoning)
 - [Enpowered by VLMs](#empowered-by-vlms)
+  - [Vision-Language-Action Models (VLAMs)](#vision-language-action-models-vlams)
 - [Comparative Analysis](#comparative-analysis)
+  - [Simulators](#simulators)
+  - [Benchmarks](#benchmarks)
+  - [Models](#models)
 
 ## Survey
 
@@ -157,7 +164,7 @@ Alois Knoll
 - Robotic skill acquisition via instruction augmentation with vision-language models [[paper]](https://arxiv.org/abs/2211.11736) [[website]](https://instructionaugmentation.github.io/)
 - Language reward modulation for pretraining reinforcement learning [[paper]](https://arxiv.org/abs/2308.12270) [[code]](https://github.com/ademiadeniji/lamp)
 - Vision-language models as success detectors [[paper]](https://proceedings.mlr.press/v232/du23b.html)
-### Vision-Language-Action Models (VLAMs)
+### Vision Language Action Models (VLAMs)
 - A Generalist Agent [[paper]](https://openreview.net/pdf?id=1ikK0kHjvj)
 - RT-1: Robotics Transformer for Real-World Control at Scale [[paper]](https://arxiv.org/pdf/2212.06817) [[code]](https://github.com/google-research/robotics_transformer) [[website]](https://robotics-transformer1.github.io/)
 - RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control [[paper]](https://proceedings.mlr.press/v229/zitkovich23a/zitkovich23a.pdf)
@@ -167,7 +174,7 @@ Alois Knoll
 - 3D-VLA: A 3D Vision-Language-Action Generative World Model [[paper]](https://openreview.net/pdf?id=EZcFK8HupF) [[code]](https://github.com/UMass-Foundation-Model/3D-VLA) [[website]](https://vis-www.cs.umass.edu/3dvla/)
 
 ## Comparative Analysis
-### Simulator
+### Simulators
 | Simulator | Description |
 | - | - |
 | [PyBullet](https://pybullet.org/wordpress/) | <div style="width: 350pt">With its origins rooted in the Bullet physics engine, PyBullet transcends the boundaries of conventional simulation platforms, offering a wealth of tools and resources for tasks ranging from robot manipulation and locomotion to computer-aided design analysis.</div> | <div style="width: 250pt"> Shao et al., Mees et al.  leverage pybullet to build a table-top environment to conduct object manipulations tasks. </div>|
