@@ -1,4 +1,4 @@
-# Thinking Toward Embodied AI: Awesome Language-conditioned Robot Manipulation Models [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# Bridging Language and Action: Awesome Language-conditioned Robot Manipulation Models [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 ![alt text](graphs/overview.png)
 
