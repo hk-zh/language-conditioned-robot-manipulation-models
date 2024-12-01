@@ -3,6 +3,8 @@
 ![alt text](graphs/overview.png)
 
 ## News
+[November 30 2024] Extended Survey paper is available!
+
 [October 02 2024]  Cutting edge papers in 2024 are avaliable!!!
 ## Table of the Content
 
@@ -25,32 +27,26 @@
 
 ## Survey
 
-This paper is basically based on the survey paper
+This paper is basically based on the survey paper:
 
-**[Language-conditioned Learning for Robot Manipulation: A Survey](https://arxiv.org/abs/2312.10807)**
+**[Bridging Language and Action: A Survey of Language-Conditioned Robot Manipulation](https://arxiv.org/abs/2312.10807)**
 <br />
 Hongkuan Zhou, 
 Xiangtong Yao, 
 Oier Mees, 
 Yuan Meng, 
-Dhruv Shah, 
 Ted Xiao,
 Yonatan Bisk, 
+Jean Oh,
 Edward Johns, 
 Mohit Shridhar, 
+Dhruv Shah, 
+Jesse Thomason, 
 Kai Huang, 
+Joyce Chai,
 Zhenshan Bing, 
 Alois Knoll
 <br />
-
-```bibtex
-@article{zhou2023language,
-  title={Language-conditioned Learning for Robotic Manipulation: A Survey},
-  author={Zhou, Hongkuan and Yao, Xiangtong and Meng, Yuan and Sun, Siming and BIng, Zhenshan and Huang, Kai and Knoll, Alois},
-  journal={arXiv preprint arXiv:2312.10807},
-  year={2023}
-}
-```
 
 ## Language-conditioned Reinforcement Learning
 ### Games
@@ -341,4 +337,29 @@ Alois Knoll
 | [Octo](https://arxiv.org/abs/2405.12213) | 2024 | Open X-Embodiment | - | T5 | CNN | ✅ | ✅ | ❌ | ✅ | 
 | [ECoT](https://arxiv.org/abs/2407.08693) | 2024 | BridgeData V2 | - | Llama 2 7B | DinoV2 & SigLIP | ✅ | ✅ | ❌ | ✅ | 
 
-
+## Citation
+If you find this survey useful please consider cite:
+```bibtex
+@article{zhou2023language,
+  author       = {Hongkuan Zhou and
+                  Xiangtong Yao and
+                  Oier Mees and
+                  Yuan Meng and
+                  Ted Xiao and
+                  Yonatan Bisk and
+                  Jean Oh and
+                  Edward Johns and
+                  Mohit Shridhar and
+                  Dhruv Shah and
+                  Jesse Thomason and
+                  Kai Huang and
+                  Joyce Chai and
+                  Zhenshan Bing and
+                  Alois Knoll},
+  title        = {Bridging Language and Action: A Survey of Language-Conditioned Robot Manipulation},
+  journal      = {CoRR},
+  volume       = {abs/2312.10807},
+  year         = {2023},
+  url          = {https://doi.org/10.48550/arXiv.2312.10807}
+}
+```
