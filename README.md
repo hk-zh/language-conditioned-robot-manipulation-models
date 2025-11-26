@@ -3,9 +3,12 @@
 ![alt text](graphs/overview.png)
 
 ## News
-[November 30 2024] Extended Survey paper is available!
+[November 20 2025] Further extension of the survey paper with a new structure and more recent papers are available!
 
-[October 02 2024]  Cutting edge papers in 2024 are avaliable!!!
+[November 30 2024] Extended survey paper is available!
+
+[October 02 2024]  Cutting edge papers in 2024 are avaliable!
+
 ## Table of the Content
 
 - [Survey Paper](#survey)
