@@ -40,18 +40,46 @@ so more people can discover and build on this survey!
 
 - [Survey Paper](#survey-paper)
 - [Taxonomy: How Language Bridges Perception and Control](#taxonomy-how-language-bridges-perception-and-control)
-- [Language as a Policy Condition – Paper Collections](#language-as-a-policy-condition--paper-collections)
-  - [Language-Conditioned Reinforcement Learning](#language-conditioned-reinforcement-learning)
-  - [Language-Conditioned Imitation Learning](#language-conditioned-imitation-learning)
-  - [Diffusion-Based Policies](#diffusion-policy)
-- [Language for Cognitive Planning and Reasoning – Paper Collections](#language-for-cognitive-planning-and-reasoning--paper-collections)
-  - [Neural-Symbolic Methods](#neuralsymbolic)
+- [Language for State Evaluation](#language-for-state-evaluation)
+  - [Reward Design or Learning](#reward-design-or-learning)
+    - [Designing](#reward-designing)
+    - [Learning](#reward-learning)
+    - [FM-driven](#fm-driven-reward-design--learning)
+  - [Cost Functions Mapping](#cost-functions-mapping)
+- [Language as Policy Conditions](#language-as-policy-conditions)
+  - [Reinforcement Learning](#reinforcement-learning)
+  - [Behavioral Cloning](#behavioral-cloning)
+  - [Diffusion-based Policy](#diffusion-based-policy)
+- [Language for Cognitive Planning and Reasoning](#language-for-cognitive-planning-and-reasoning)
+  - [Neuro-symbolic Approaches](#neuro-symbolic-approaches)
   - [Empowered by LLMs](#empowered-by-llms)
+    - [Planning](#planning)
+      - [Open-loop](#open-loop-planning)
+      - [Closed-loop](#closed-loop-planning)
+     - [Reasoning](#reasoning)
+      - [Summarization](#summarization)
+      - [Prompt Engineering](#eliciting-reasoning-via-prompt-engineering)
+      - [Iterative reasoning](#iterative-reasoning)
   - [Empowered by VLMs](#empowered-by-vlms)
+    - [Contrastive Learning](#contrastive-learning)
+    - [Generative Approaches](#generative-approaches)
+      - [Text Generation](#text-generation)
+      - [Image Generation](#image-generation)
+  - [Vision-Language-Action (VLA) Models](#vision-language-action-vla-models)
+    - [Optimization for Perception](#optimization-for-action)
+      - [Data Sources and Augmentation](#data-sources-and-augmentation)
+      - [3D Scene Representation and Grounding](#3d-scene-representation-and-grounding)
+      - [Multimodal Sensing and Fusion](#multimodal-sensing-and-fusion)
+    - [Optimization for Reasoning](#optimization-for-reasoning)
+      - [Long-horizon Planning](#long-horizon-planning)
+      - [Preserving Foundational VLM capabilities](#preserving-foundational-vlm-capabilities)
+      - [Leveraging World Model](#leveraging-world-model)
+    - [Optimization for Action](#optimization-for-action)
+    - [Optimization for learning and adaption](#optimization-for-learning-and-adaption)
+    - [Comparison Table](#comparison-table)
 - [Comparative Analysis](#comparative-analysis)
   - [Benchmarks](#benchmarks)
   - [Models](#models)
-- [How to Contribute](#how-to-contribute)
 - [Citation](#citation)
 
 
@@ -85,17 +113,17 @@ Below, we briefly summarize each role and show how it maps to the sections in th
 
 ---
 
-## 4. Language for State Evaluation
+## Language for State Evaluation
 
-### 4.1 Reward Design / Learning
+### Reward Design or Learning
 
-#### 4.1.1 Reward Designing
+#### Reward Designing
 
 - Zero-Shot Reward Specification via Grounded Natural Language [[paper]](https://proceedings.mlr.press/v162/mahmoudieh22a.html) 
 - Trajectory Improvement and Reward Learning from Comparative Language Feedback [[paper]](https://proceedings.mlr.press/v270/yang25e.html)[[code]](https://github.com/USC-Lira/language-preference-learning)
 - PixL2R: Guiding Reinforcement Learning Using Natural Language by Mapping Pixels to Rewards [[paper]](https://proceedings.mlr.press/v155/goyal21a.html)
 
-#### 4.1.2 Reward Learning
+#### Reward Learning
 - Guided Cost Learning: Deep Inverse Optimal Control via Policy Optimization [[paper]](https://proceedings.mlr.press/v48/finn16.html) 
 - From Language to Goals: Inverse Reinforcement Learning for Vision-Based Instruction Following [[paper]](https://openreview.net/forum?id=r1lq1hRqYQ)
 - Grounding English Commands to Reward Functions [[paper]](https://cs.brown.edu/~jmacglashan/pubpdfs/rss_commands.pdf)
@@ -103,7 +131,7 @@ Below, we briefly summarize each role and show how it maps to the sections in th
 - From Language to Goals: Inverse Reinforcement Learning for Vision-Based Instruction Following [[paper]](https://arxiv.org/abs/1902.07742)
 - Learning Language-Conditioned Robot Behavior from Offline Data and Crowd-Sourced Annotation [[paper]](https://arxiv.org/abs/2109.01115)[[code]](https://github.com/suraj-nair-1/lorel)
 
-#### 4.1.3 FM-driven Reward Design / Learning
+#### FM-driven Reward Design / Learning
 
 - Reward Design with Language Models [[paper]](https://openreview.net/pdf?id=10uNUgI5Kl) [[code]](https://github.com/minaek/reward_design_with_llms)
 - Language Reward Modulation for Pretraining Reinforcement Learning [[paper]](https://openreview.net/forum?id=zzHUJYe3Py) [[code]](https://github.com/ademiadeniji/lamp)
@@ -120,7 +148,7 @@ Below, we briefly summarize each role and show how it maps to the sections in th
 - ReWiND: Language-Guided Rewards Teach Robot Policies without New Demonstrations [[paper]](https://proceedings.mlr.press/v305/zhang25a.html)[[code]](https://github.com/rewind-reward/ReWiND)
 
 
-### 4.2 Cost Functions Mapping
+### Cost Functions Mapping
 
 - Correcting Robot Plans with Natural Language Feedback [[paper]](https://arxiv.org/pdf/2204.05186)
 - VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models [[paper]](https://voxposer.github.io/voxposer.pdf) [[code]](https://github.com/huangwl18/VoxPoser)
@@ -129,9 +157,9 @@ Below, we briefly summarize each role and show how it maps to the sections in th
 
 
 
-## 5. Language as the Policy Conditions
+## Language as Policy Conditions
 
-### 5.1 Reinforcement Learning
+### Reinforcement Learning
 
 - Language-Conditioned Goal Generation: a New Approach to Language Grounding for RL [[paper]](https://arxiv.org/abs/2006.07043) 
 - LanCon-Learn: Learning With Language to Enable Generalization in Multi-Task Manipulation [[paper]](https://ieeexplore.ieee.org/document/9667188)
@@ -145,7 +173,7 @@ Below, we briefly summarize each role and show how it maps to the sections in th
 - LIMT: Language-Informed Multi-Task Visual World Models [[paper]](https://ieeexplore.ieee.org/document/11128817)
 
 
-### 5.2 Behavioral Cloning
+### Behavioral Cloning
 - Pay Attention! - Robustifying a Deep Visuomotor Policy Through Task-Focused Visual Attention [[paper]](https://openaccess.thecvf.com/content_CVPR_2019/html/Abolghasemi_Pay_Attention_-_Robustifying_a_Deep_Visuomotor_Policy_Through_Task-Focused_CVPR_2019_paper.html) 
 - Language-Conditioned Imitation Learning for Robot Manipulation Tasks [[paper]](https://proceedings.neurips.cc/paper/2020/file/9909794d52985cbc5d95c26e31125d1a-Paper.pdf) 
 - CLIPORT: What and Where Pathways for Robotic Manipulation [[paper]](https://proceedings.mlr.press/v164/shridhar22a/shridhar22a.pdf) [[code]](https://cliport.github.io/)
@@ -167,7 +195,7 @@ Semantic Augmentations and Action Chunking [[paper]](https://ieeexplore.ieee.org
 
 
 
-### 5.3 Diffusion-based Policy
+### Diffusion-based Policy
 - Diffusion Policy: Visuomotor Policy Learning via Action Diffusion [[paper]](https://diffusion-policy.cs.columbia.edu/diffusion_policy_ijrr.pdf) [[code]](https://github.com/real-stanford/diffusion_policy)
 - Imitating Human Behaviour with Diffusion Models [[paper]](https://openreview.net/forum?id=Pv1GPQzRrC8) [[code]](https://github.com/microsoft/Imitating-Human-Behaviour-w-Diffusion)
 - Movement Primitive Diffusion: Learning Gentle Robotic Manipulation of Deformable Objects [[paper]](https://ieeexplore.ieee.org/document/10480552)
@@ -198,9 +226,9 @@ Semantic Augmentations and Action Chunking [[paper]](https://ieeexplore.ieee.org
 - RoLD: Robot Latent Diffusion for Multi-task Policy Modeling [[paper]](https://link.springer.com/chapter/10.1007/978-981-96-2064-7_25) [[code]](https://github.com/AlbertTan404/RoLD)
 - GR-MG: Leveraging Partially-Annotated Data via Multi-Modal Goal-Conditioned Policy [[paper]](https://ieeexplore.ieee.org/document/10829675) [[code]](https://github.com/bytedance/GR-MG/tree/main)
 
-## 6. Language for Cognitive Planning and Reasoning
+## Language for Cognitive Planning and Reasoning
 
-### 6.1 Neuro-symbolic Approaches
+### Neuro-symbolic Approaches
 
 - Hierarchical understanding in robotic manipulation: A knowledge-based framework [[paper]](https://www.mdpi.com/2076-0825/13/1/28)
 - Semantic Grasping Via a Knowledge Graph of Robotic Manipulation: A Graph Representation Learning Approach [[paper]](https://ieeexplore.ieee.org/iel7/7083369/7339444/09830861.pdf)
@@ -217,17 +245,17 @@ Semantic Augmentations and Action Chunking [[paper]](https://ieeexplore.ieee.org
 - ProgPrompt: program generation for situated robot task planning using large language models [[paper]](https://link.springer.com/article/10.1007/s10514-023-10135-3)
 - Data-Agnostic Robotic Long-Horizon Manipulation with Vision-Language-Guided Closed-Loop Feedback [[paper]](https://www.arxiv.org/abs/2503.21969v1) [[code]](https://github.com/Ghiara/DAHLIA)
 - Growing with Your Embodied Agent: A Human-in-the-Loop Lifelong Code Generation Framework for Long-Horizon Manipulation Skills [[paper]](https://arxiv.org/abs/2509.18597) [[code]]()
-### 6.2 Empowered by LLMs 
+### Empowered by LLMs 
 
-#### 6.2.1 Planning
-##### 6.2.1.1 Open-loop Planning
+#### Planning
+##### Open-loop Planning
 - Do As I Can, Not As I Say: Grounding Language in Robotic Affordances [[paper]](https://proceedings.mlr.press/v205/ichter23a/ichter23a.pdf) [[code]](https://say-can.github.io/)
 - Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners [[paper]](https://proceedings.mlr.press/v229/ren23a/ren23a.pdf) [[code]](https://github.com/google-research/google-research/tree/master/language_model_uncertainty)
 - Language Models as Zero-Shot Planners: Extracting Actionable Knowledge for Embodied Agents [[paper]](Language Models as Zero-Shot Planners:
 Extracting Actionable Knowledge for Embodied Agents) [[code]](https://github.com/huangwl18/language-planner)
 - Embodied Task Planning with Large Language Models [[paper]](https://arxiv.org/abs/2307.01848) [[code]](https://github.com/Gary3410/TaPA)
 
-##### 6.2.1.2 Closed-loop Planning
+##### Closed-loop Planning
 - Text2Motion: from natural language instructions to feasible plans [[paper]](https://link.springer.com/article/10.1007/s10514-023-10131-7) 
 - AlphaBlock: Embodied Finetuning for Vision-Language Reasoning in Robot Manipulation [[paper]](https://arxiv.org/pdf/2305.18898) 
 - Learning to reason over scene graphs: a case study of finetuning GPT-2 into a robot language model for grounded task planning [[paper]](https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2023.1221739/full) 
@@ -237,21 +265,20 @@ Extracting Actionable Knowledge for Embodied Agents) [[code]](https://github.com
 -  Language Models as Zero-Shot Trajectory Generators [[paper]](https://ieeexplore.ieee.org/document/10549793) [[code]](https://github.com/kwonathan/language-models-trajectory-generators)
 - SELP: Generating Safe and Efficient Task Plans for Robot Agents with Large Language Models [[paper]](https://arxiv.org/abs/2409.19471) [[code]](https://github.com/lt-asset/selp)
 - Human–robot interaction through joint robot planning with large language models [[paper]](https://link.springer.com/article/10.1007/s11370-024-00570-1) 
-#### 6.2.2 Reasoning
-##### 6.2.2.1 Summarization
+#### Reasoning
+##### Summarization
 - Rearrangement: A Challenge for Embodied AI [[paper]](https://arxiv.org/pdf/2011.01975) [[code]](https://github.com/haosulab/CSE291-G00-SP20)
 - The ThreeDWorld Transport Challenge: A Visually Guided Task-and-Motion Planning Benchmark Towards Physically Realistic Embodied AI [[paper]](https://ieeexplore.ieee.org/document/9812329)
 - Housekeep: Tidying Virtual Households Using Commonsense Reasoning [[paper]](https://link.springer.com/chapter/10.1007/978-3-031-19842-7_21) [[code]](https://github.com/yashkant/housekeep)
 - TidyBot: personalized robot assistance with large language models [[paper]](https://link.springer.com/article/10.1007/s10514-023-10139-z) [[code]](https://github.com/jimmyyhwu/tidybot)
-##### 6.2.2.2 Eliciting reasoning via prompt engineering
+##### Eliciting reasoning via prompt engineering
 - Building Cooperative Embodied Agents Modularly with Large Language Models [[paper]](https://openreview.net/forum?id=EnXJfQqy0K) [[code]](https://github.com/UMass-Embodied-AGI/CoELA)
 - Socratic Models: Composing Zero-Shot Multimodal Reasoning with Language [[paper]](https://openreview.net/forum?id=G2Q2Mh3avow) [[code]](https://github.com/google-research/google-research/tree/master/socraticmodels)
 - Robotic Control via Embodied Chain-of-Thought Reasoning [[paper]](https://openreview.net/forum?id=S70MgnIA0v) [[code]](https://github.com/MichalZawalski/embodied-CoT/)
 - Training Strategies for Efficient Embodied Reasoning [[paper]](https://arxiv.org/abs/2505.08243)
 -  Scaling up and distilling down: Language-guided robot skill acquisition [[paper]](https://proceedings.mlr.press/v229/ha23a/ha23a.pdf) [[code]](https://github.com/real-stanford/scalingup)
-- 
 
-##### 6.2.2.3 Code-generation
+##### Code-generation
 - Voyager: An Open-Ended Embodied Agent with Large Language Models [[paper]](https://neurips.cc/virtual/2023/83083) 
 - Code as Policies: Language Model Programs for Embodied Control [[paper]](https://ieeexplore.ieee.org/document/10160591) [[code]](https://github.com/google-research/google-research/tree/master/code_as_policies)
 - ProgPrompt: program generation for situated robot task planning using large language models [[paper]](https://link.springer.com/article/10.1007/s10514-023-10135-3) [[code]](https://github.com/NVlabs/progprompt-vh)
@@ -260,15 +287,15 @@ Extracting Actionable Knowledge for Embodied Agents) [[code]](https://github.com
 - RoboCodeX: Multimodal Code Generation for Robotic Behavior Synthesis [[paper]](https://proceedings.mlr.press/v235/mu24a.html) [[code]](https://github.com/RoboCodeX-source/RoboCodeX_code)
 - Data-Agnostic Robotic Long-Horizon Manipulation with Vision-Language-Guided Closed-Loop Feedback [[paper]](https://www.arxiv.org/abs/2503.21969v1) [[code]](https://ghiara.github.io/DAHLIA/)
 - Growing with Your Embodied Agent: A Human-in-the-Loop Lifelong Code Generation Framework for Long-Horizon Manipulation Skills [[paper]](https://openreview.net/forum?id=1su9RkTVT9)
-##### 6.2.2.4 Iterative reasoning
+##### Iterative reasoning
 - Inner Monologue: Embodied Reasoning through Planning with Language Models [[paper]](https://proceedings.mlr.press/v205/huang23c.html)
 - REFLECT: Summarizing Robot Experiences for FaiLure Explanation and CorrecTion [[paper]](https://proceedings.mlr.press/v229/liu23g/liu23g.pdf) [[code]](https://github.com/real-stanford/reflect)
 - HiCRISP: An LLM-based Hierarchical Closed-Loop Robotic Intelligent
 Self-Correction Planner [[paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10865457) [[code]](https://github.com/ming-bot/HiCRISP)
 - Autonomous Interactive Correction MLLM for Robust Robotic Manipulation [[paper]](https://proceedings.mlr.press/v270/xiong25a.html) [[code]](https://sites.google.com/view/aic-mllm)
 - Self-Corrected Multimodal Large Language Model for End-to-End Robot Manipulation [[paper]](https://arxiv.org/abs/2405.17418v1)
-#### 6.2.3 LLMs-driven structured planning
-##### 6.2.3.1 Combining with symbolic system
+#### LLMs-driven structured planning
+##### Combining with symbolic system
 - Neuro-Symbolic Procedural Planning with Commonsense Prompting [[paper]](https://openreview.net/forum?id=iOc57X9KM54) [[code]](https://github.com/YujieLu10/CLAP)
 - Hierarchical Understanding in Robotic Manipulation: A Knowledge-Based Framework [[paper]](https://www.mdpi.com/2076-0825/13/1/28)
 - RoboEXP: Action-Conditioned Scene Graph via Interactive Exploration for Robotic Manipulation [[paper]](https://openreview.net/pdf?id=UHxPZgK33I) [[code]](https://github.com/Jianghanxiao/RoboEXP)
@@ -279,14 +306,14 @@ Self-Correction Planner [[paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?ar
 - LEMMo-Plan: LLM-Enhanced Learning from Multi-Modal Demonstration for Planning Sequential Contact-Rich Manipulation Tasks [[paper]](https://ieeexplore.ieee.org/document/11127842) 
 - Bootstrapping Object-Level Planning with Large Language Models [[paper]](https://ieeexplore.ieee.org/document/11127365) [[code]](https://github.com/davidpaulius/olp_llm)
 
-##### 6.2.3.2 Combining LLMs with behavior trees
+##### Combining LLMs with behavior trees
 - A survey of Behavior Trees in robotics and AI [[paper]](https://www.sciencedirect.com/science/article/pii/S0921889022000513?via%3Dihub) 
 - LLM-BT: Performing Robotic Adaptive Tasks based on Large Language Models and Behavior Trees [[paper]](https://ieeexplore.ieee.org/document/10610183) [[code]](https://github.com/henryhaotian/LLM-BT)
 - Integrating Intent Understanding and Optimal Behavior Planning for Behavior Tree Generation from Human Instructions [[paper]](https://www.ijcai.org/proceedings/2024/0755.pdf) [[code]](https://github.com/DIDS-EI/LLM-OBTEA)
 - Automatic Behavior Tree Expansion with LLMs for Robotic Manipulation [[paper]](https://ieeexplore.ieee.org/document/11127942) [[code]](https://github.com/jstyrud/BETR-XP-LLM)
 - LLM-as-BT-Planner: Leveraging LLMs for Behavior Tree Generation in Robot Task Planning [[paper]](https://ieeexplore.ieee.org/document/11128454) [[code]](https://github.com/ProNeverFake/kios)
-### 6.3 Empowered by VLMs
-#### 6.3.1 Contrastive Learning
+### Empowered by VLMs
+#### Contrastive Learning
 - CLIPORT: What and Where Pathways for Robotic Manipulation [[paper]](https://proceedings.mlr.press/v164/shridhar22a/shridhar22a.pdf) [[code]](https://github.com/cliport/cliport)
 - Dream2Real: Zero-Shot 3D Object Rearrangement with Vision-Language Models [[paper]](https://ieeexplore.ieee.org/document/10611220) [[code]](https://github.com/FlyCole/Dream2Real)
 - CLIP-Fields: Weakly Supervised Semantic Fields for Robotic Memory [[paper]](https://www.roboticsproceedings.org/rss19/p074.pdf) [[code]](https://github.com/notmahi/clip-fields)
@@ -297,8 +324,8 @@ Self-Correction Planner [[paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?ar
 - Open-World Object Manipulation using Pre-Trained Vision-Language Models [[paper]](https://proceedings.mlr.press/v229/stone23a/stone23a.pdf)
 - Simple Open-Vocabulary Object Detection with Vision Transformers [[paper]](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136700714.pdf) [[code]](https://github.com/google-research/scenic/tree/main/scenic/projects/owl_vit)
 - Robotic Skill Acquisition via Instruction Augmentation with Vision-Language Models [[paper]](https://www.roboticsproceedings.org/rss19/p029.pdf) 
-#### 6.3.2 Generative Approaches
-##### 6.3.2.1 Text Generation
+#### Generative Approaches
+##### Text Generation
 - Pretrained Language Models as Visual Planners for Human Assistance [[paper]](https://ieeexplore.ieee.org/document/10377131) [[code]](https://github.com/facebookresearch/vlamp)
 - Learning Universal Policies via Text-Guided Video Generation [[paper]](https://proceedings.neurips.cc/paper_files/paper/2023/file/1d5b9233ad716a43be5c0d3023cb82d0-Paper-Conference.pdf) 
 - Learning to reason over scene graphs: a case study of finetuning GPT-2 into a robot language model for grounded task planning [[paper]](https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2023.1221739/full) 
@@ -307,65 +334,65 @@ Self-Correction Planner [[paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?ar
 - PaLM-E: An Embodied Multimodal Language Model [[paper]](https://proceedings.mlr.press/v202/driess23a/driess23a.pdf)
 - Socratic Models: Composing Zero-Shot Multimodal Reasoning with Language [[paper]](https://openreview.net/forum?id=G2Q2Mh3avow) [[code]](https://github.com/google-research/google-research/tree/master/socraticmodels)
 - PIVOT: Iterative Visual Prompting Elicits Actionable Knowledge for VLMs [[paper]](https://openreview.net/pdf/c3e6b7c07bd8a22c950e8a6036aeecf048f9588a.pdf) 
-##### 6.3.2.2 Image Generation
+##### Image Generation
 - DALL-E-Bot: Introducing Web-Scale Diffusion Models to Robotics [[paper]](https://ieeexplore.ieee.org/document/10114570) 
 - Zero-Shot Robotic Manipulation with Pre-Trained Image-Editing Diffusion Models [[paper]](https://openreview.net/forum?id=c0chJTSbci) [[code]](https://github.com/kvablack/susie)
 - Semantically controllable augmentations for generalizable robot learning [[paper]](https://journals.sagepub.com/doi/10.1177/02783649241273686)
 - GR-MG: Leveraging Partially-Annotated Data via Multi-Modal Goal-Conditioned Policy [[paper]](https://ieeexplore.ieee.org/document/10829675) [[code]](https://github.com/bytedance/GR-MG/tree/main)
 - General Flow as Foundation Affordance for Scalable Robot Learning[[paper]](https://openreview.net/forum?id=nmEt0ci8hi&noteId=nmEt0ci8hi) [[code]](https://github.com/michaelyuancb/general_flow)
-### 6.4 Vision-Language-Action (VLA) Models 
-#### 6.4.1 Optimization for perception 
-##### 6.4.1.2 Data sources and augmentation
+### Vision-Language-Action (VLA) Models 
+#### Optimization for Perception 
+##### Data Sources and Augmentation
 - EgoVLA: Learning Vision-Language-Action Models from Egocentric Human Videos [[paper]](https://arxiv.org/abs/2507.12440) [[code]](https://github.com/quincy-u/Ego_Humanoid_Manipulation_Benchmark)
 - H-RDT: Human Manipulation Enhanced Bimanual Robotic Manipulation [[paper]](https://arxiv.org/abs/2507.23523) 
 - π0: A Vision-Language-Action Flow Model for General Robot Control [[paper]](https://arxiv.org/abs/2410.24164)
 - RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation [[paper]](RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation) 
 - Shortcut Learning in Generalist Robot Policies: The Role of Dataset Diversity and Fragmentation [[paper]](https://arxiv.org/abs/2508.06426) [[code]](https://github.com/Lucky-Light-Sun/shortcut-learning-in-grps)
-##### 6.4.1.2 3D scene representation and grounding
+##### 3D Scene Representation and Grounding
 - SpatialVLA: Exploring Spatial Representations for Visual-Language-Action Model [[paper]](https://arxiv.org/abs/2501.15830) [[code]](https://github.com/SpatialVLA/SpatialVLA)
 - PointVLA: Injecting the 3D World into Vision-Language-Action Models [[paper]](https://arxiv.org/abs/2503.07511) 
 - BridgeVLA: Input-Output Alignment for Efficient 3D Manipulation Learning with Vision-Language Models [[paper]](https://arxiv.org/abs/2506.07961) [[code]](https://github.com/BridgeVLA/BridgeVLA)
 - GeoVLA: Empowering 3D Representations in Vision-Language-Action Models [[paper]](https://arxiv.org/abs/2508.09071) 
 
-##### 6.4.1.3 Multimodal sensing and fusion
+##### Multimodal Sensing and Fusion
 - VTLA: Vision-Tactile-Language-Action Model with Preference Learning for Insertion Manipulation [[paper]](https://arxiv.org/abs/2505.09577) 
 - Tactile-VLA: Unlocking Vision-Language-Action Model's Physical Knowledge for Tactile Generalization [[paper]](https://arxiv.org/abs/2507.09160) 
 - OmniVTLA: Vision-Tactile-Language-Action Model with Semantic-Aligned Tactile Sensing [[paper]](https://arxiv.org/abs/2508.08706) 
 - Beyond Sight: Finetuning Generalist Robot Policies with Heterogeneous Sensors via Language Grounding [[paper]](https://arxiv.org/abs/2501.04693) [[code]](https://github.com/fuse-model/FuSe)
 - ForceVLA: Enhancing VLA Models with a Force-aware MoE for Contact-rich Manipulation [[paper]](https://openreview.net/forum?id=2845H8Ua5D) [[code]](https://github.com/ft-robotic/ForceVLA/)
 
-#### 6.4.2 Optimization for reasoning
-##### 6.4.2.1 Long-horizon planning
+#### Optimization for Reasoning
+##### Long-horizon Planning
 - LoHoVLA: A Unified Vision-Language-Action Model for Long-Horizon Embodied Tasks [[paper]](https://arxiv.org/abs/2506.00411) 
 - DexVLA: Vision-Language Model with Plug-In Diffusion Expert for General Robot Control [[paper]](https://arxiv.org/abs/2502.05855) [[code]](https://github.com/juruobenruo/DexVLA)
 - Long-VLA: Unleashing Long-Horizon Capability of Vision Language Action Model for Robot Manipulation [[paper]](https://arxiv.org/abs/2508.19958) 
 - MemoryVLA: Perceptual-Cognitive Memory in Vision-Language-Action Models for Robotic Manipulation [[paper]](https://arxiv.org/abs/2508.19236)
 
-##### 6.4.2.2 Preserving foundational VLM capabilities
+##### Preserving Foundational VLM capabilities
 - Diffusion-VLA: Generalizable and Interpretable Robot Foundation Model via Self-Generated Reasoning [[paper]](https://arxiv.org/abs/2412.03293) 
 - ChatVLA-2: Vision-Language-Action Model with Open-World Embodied Reasoning from Pretrained Knowledge [[paper]](https://arxiv.org/abs/2505.21906)
 - Knowledge Insulating Vision-Language-Action Models: Train Fast, Run Fast, Generalize Better [[paper]](https://arxiv.org/abs/2505.23705) 
 - InstructVLA: Vision-Language-Action Instruction Tuning from Understanding to Manipulation [[paper]](https://arxiv.org/abs/2507.17520) 
 - GR-3 Technical Report [[paper]](https://arxiv.org/abs/2507.15493) 
 
-##### 6.4.2.2 Leveraging world model
+##### Leveraging World Model
 - Predictive Inverse Dynamics Models are Scalable Learners for Robotic Manipulation [[paper]](https://arxiv.org/abs/2412.15109) [[code]](https://github.com/InternRobotics/Seer)
 - CoT-VLA: Visual Chain-of-Thought Reasoning for Vision-Language-Action Models [[paper]](https://arxiv.org/abs/2503.22020) 
 - WorldVLA: Towards Autoregressive Action World Model [[paper]](https://arxiv.org/abs/2506.21539) [[code]](https://github.com/alibaba-damo-academy/RynnVLA-002)
 - DreamVLA: A Vision-Language-Action Model Dreamed with Comprehensive World Knowledge [[paper]](https://arxiv.org/abs/2507.04447) [[code]](https://github.com/Zhangwenyao1/DreamVLA)
-#### 6.4.3 Optimization for action
+#### Optimization for Action
 - π0: A vision-language-action flow model for general robot control. [[paper]](https://arxiv.org/abs/2410.24164) 
 - FAST: Efficient Action Tokenization for Vision-Language-Action Models [[paper]](https://arxiv.org/abs/2501.09747) [[code]](https://huggingface.co/physical-intelligence/fast)
 - π0.5: a Vision-Language-Action Model with Open-World Generalization [[paper]](https://arxiv.org/abs/2504.16054)
 - Discrete Diffusion VLA: Bringing Discrete Diffusion to Action Decoding in Vision-Language-Action Policies [[paper]](https://arxiv.org/abs/2508.20072) 
-#### 6.4.4 Optimization for learning and adaption
+#### Optimization for learning and adaption
 - Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success [[paper]](https://arxiv.org/abs/2502.19645) [[code]](https://github.com/moojink/openvla-oft)
 - ControlVLA: Few-shot Object-centric Adaptation for Pre-trained Vision-Language-Action Models [[paper]](https://arxiv.org/abs/2506.16211) [[code]](https://github.com/ControlVLA/ControlVLA)
 - ConRFT: A Reinforced Fine-tuning Method for VLA Models via Consistency Policy [[paper]](https://arxiv.org/abs/2502.05450) 
 - Interactive Post-Training for Vision-Language-Action Models [[paper]](https://arxiv.org/abs/2505.17016)
 - Reinforcement Learning for Long-Horizon Interactive LLM Agents [[paper]](https://arxiv.org/abs/2502.01600)
 
-
+#### Comparison Table
 | Optimization (Direction) | Article | Time | Observation | Action Generation | CoT | FP | MEM | MD | Pretraining CE | Scenarios MS | Scenarios RW | Execution CE |
 |---|---|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
 | Data Source Augmentation | [EgoVLA](https://arxiv.org/abs/2507.12440) | 2025-07 | RGB, ROB, TX | DP | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ |
