@@ -29,7 +29,7 @@ so more people can discover and build on this survey!
 ---
 
 ## News
-
+- **[June 22, 2026]** This survey has been accepted by The International Journal of Robotics Research (IJRR) 2026.
 - **[November 20, 2025]** Further extension of the survey paper with **new structure** (language roles taxonomy) and **more recent works (2024–2025)**.
 - **[November 30, 2024]** Extended survey paper is available.
 - **[October 02, 2024]** Cutting-edge papers in 2024 are available.
